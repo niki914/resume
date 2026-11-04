@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haowen Deng - Resume</title>
+  <style>
+    /* ==========================================================================
+       PAGE & BASE TYPOGRAPHY (LaTeX / Computer Modern / Classic Serif Style)
+       ========================================================================== */
+    @page {
+      size: A4;
+      margin: 12mm 16mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Times New Roman", Times, "Computer Modern Roman", "Latin Modern Roman", serif;
+      font-size: 10pt;
+      line-height: 1.38;
+      color: #000000;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .resume-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px 0;
+    }
+
+    /* ==========================================================================
+       LINKS: Underlined, muted deep navy blue (never bright)
+       ========================================================================== */
+    a {
+      color: #1a4273;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* ==========================================================================
+       HEADER SECTION
+       ========================================================================== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+
+    .header-left .name {
+      font-size: 22pt;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .header-left .meta-line {
+      font-size: 9.5pt;
+      margin-top: 2px;
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 9.5pt;
+      line-height: 1.42;
+    }
+
+    /* ==========================================================================
+       SECTION HEADINGS: Uppercase with full-width underline divider
+       ========================================================================== */
+    section {
+      margin-top: 14px;
+    }
+
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 1px;
+      margin-bottom: 6px;
+    }
+
+    /* ==========================================================================
+       ENTRY HEADER (Role / Org on left, Location / Date on right)
+       ========================================================================== */
+    .entry {
+      margin-bottom: 8px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 10pt;
+    }
+
+    .entry-title {
+      font-weight: bold;
+    }
+
+    .entry-location {
+      font-size: 9.5pt;
+      white-space: nowrap;
+    }
+
+    .entry-subtitle {
+      font-style: italic;
+      font-size: 9.5pt;
+    }
+
+    .entry-date {
+      font-style: italic;
+      font-size: 9.5pt;
+      white-space: nowrap;
+    }
+
+    /* ==========================================================================
+       BULLET LISTS
+       ========================================================================== */
+    ul.bullet-list {
+      list-style-type: disc;
+      padding-left: 18px;
+      margin-top: 3px;
+    }
+
+    ul.bullet-list li {
+      margin-bottom: 4px;
+      text-align: justify;
+      font-size: 9.5pt;
+      line-height: 1.38;
+    }
+
+    ul.bullet-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Skills list: compact bullets */
+    ul.skills-list {
+      list-style-type: disc;
+      padding-left: 18px;
+      margin-top: 4px;
+    }
+
+    ul.skills-list li {
+      margin-bottom: 3.8px;
+      text-align: justify;
+      font-size: 9.5pt;
+      line-height: 1.35;
+    }
+
+    .item-bullet {
+      display: inline-block;
+      margin-right: 4px;
+    }
+
+    @media print {
+      body {
+        font-size: 9.8pt;
+      }
+      .resume-container {
+        padding: 0;
+        max-width: 100%;
+      }
+      section {
+        margin-top: 13px;
+      }
+      ul.bullet-list li {
+        margin-bottom: 3.8px;
+      }
+      ul.skills-list li {
+        margin-bottom: 3.6px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="resume-container">
+
+  <!-- ========================================================================
+       HEADER
+       ======================================================================== -->
+  <header>
+    <div class="header-left">
+      <div class="name">Haowen Deng</div>
+      <div class="meta-line">
+        Website: <a href="https://houman-dang.vercel.app/" target="_blank">houman-dang.vercel.app</a>
+      </div>
+      <div class="meta-line">
+        GitHub: <a href="https://github.com/niki914" target="_blank">github.com/niki914</a>
+        &nbsp;·&nbsp;
+        LinkedIn: <a href="https://www.linkedin.com/in/houman-dang-niki/" target="_blank">linkedin.com/in/houman-dang-niki</a>
+      </div>
+    </div>
+    <div class="header-right">
+      <div>Email: <a href="mailto:niki27687@gmail.com">niki27687@gmail.com</a></div>
+      <div>Mobile: +86 13828031386</div>
+      <div>Guangzhou, China &nbsp;·&nbsp; English B2</div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       EDUCATION
+       ======================================================================== -->
+  <section id="education">
+    <div class="section-title">Education</div>
+
+    <div class="entry">
+      <div class="entry-header-row">
+        <span class="entry-title">Guangdong University of Technology</span>
+        <span class="entry-location">Guangzhou, China</span>
+      </div>
+      <div class="entry-header-row">
+        <span class="entry-subtitle">Bachelor of Engineering in Software Engineering</span>
+        <span class="entry-date">Sept. 2023 – June 2027 Expected</span>
+      </div>
+      <div style="margin-top: 3px; font-size: 9.5pt; text-align: justify;">
+        Core Coursework: Data Structures, Operating Systems, Computer Networks, Computer Organization and Architecture, Object-Oriented Programming.
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       EXPERIENCE
+       ======================================================================== -->
+  <section id="experience">
+    <div class="section-title">Experience</div>
+
+    <div class="entry">
+      <div class="entry-header-row">
+        <span class="entry-title">ByteDance (TikTok) - Toutiao</span>
+        <span class="entry-location">Guangzhou, China</span>
+      </div>
+      <div class="entry-header-row">
+        <span class="entry-subtitle">Android Software Engineer Intern</span>
+        <span class="entry-date">Dec. 2025 – July 2026</span>
+      </div>
+
+      <ul class="bullet-list">
+        <li>
+          Refactored smart album BottomSheet with <b>ViewPager</b> nesting two-layer <b>RecyclerViews</b>; rewrote parent touch event dispatch and interception mechanisms to resolve multi-layer nested scrolling conflicts.
+        </li>
+        <li>
+          Implemented album grid drag-to-reorder screen using <b>ItemTouchHelper</b>, resolving race conditions between drag displacement and item deletion animations.
+        </li>
+        <li>
+          Orchestrated voice input states via a state machine; leveraged <b>Spannable</b> in <b>EditText</b> for streaming text rendering and graying. Decoupled analytics via interface callbacks for <b>dependency inversion</b> and cross-feature reuse.
+        </li>
+        <li>
+          Audited and patched 10+ legacy telemetry points in publishing pipeline by filling missing fields and fixing trigger timing, supporting downstream data analytics and on-device model training.
+        </li>
+        <li>
+          Audited 8-year legacy publishing pipeline to optimize API success rate; fixed workflow issues and designed execution counters across clicks, coroutines, and network request enums to diagnose anomalies and boost conversion.
+        </li>
+        <li>
+          Delivered <b>30+ business features and fixed 60+ defects</b>. Patched security vulnerabilities by intercepting illicit requests via headers; resolved publishing pipeline SDK breakages caused by bytecode instrumentation on newer Android versions.
+        </li>
+        <li>
+          Participated in <b>technical design reviews and Code Reviews</b> under mentor guidance, establishing defensive programming habits, rigorous engineering workflows, and team collaboration standards.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROJECTS
+       ======================================================================== -->
+  <section id="projects">
+    <div class="section-title">Projects</div>
+
+    <div class="entry">
+      <div class="entry-header-row">
+        <span class="entry-title">Zafiro - Agent with Phone control, Shell, Python 3, with Skills and MCP support</span>
+        <span class="entry-location">330+ Stars &nbsp;·&nbsp; 50+ Forks &nbsp;·&nbsp; 94K LoC Kotlin</span>
+      </div>
+      <div class="entry-header-row">
+        <span class="entry-subtitle">
+          Core Developer &nbsp;·&nbsp;
+          <a href="https://github.com/niki914/zafiro" target="_blank">GitHub</a> &nbsp;·&nbsp;
+          <a href="https://github.com/niki914/zafiro/releases/download/v18-1.10.1/Zafiro-1.10.1.apk" target="_blank">APK Download</a>
+        </span>
+        <span class="entry-date">June 2026 – Present</span>
+      </div>
+
+      <ul class="bullet-list">
+        <li>
+          Designed a unified theme token system in <b>Jetpack Compose</b> supporting Liquid Glass and Material3/3E styles, distributing component styling while scoping local <b>recomposition</b>.
+        </li>
+        <li>
+          Built a permission dispatch module with priority fallback across Root, Shizuku, system dialogs, and settings, serving both standard users and elevated privilege needs.
+        </li>
+        <li>
+          Engineered an Agent runtime inspired by Pi with <b>OkHttp</b> for multi-protocol abstraction, <b>persistent storage</b>, and model hot-swapping. Integrated <b>MCP</b> for workflow hooks, async tool calls, and context compression.
+        </li>
+        <li>
+          Maintained 94K lines of production Kotlin with multi-module and <b>MVI</b> architecture. Enforced commit hygiene via <b>Git Hooks</b>, sustaining a Codacy A code quality rating.
+        </li>
+        <li>
+          Blog: <a href="https://houman-dang.vercel.app/#blogs" target="_blank">houman-dang.vercel.app/#blogs</a> &nbsp;·&nbsp; Sources: <a href="https://github.com/niki914/zafiro/blob/main/ui-kit/src/main/java/com/niki914/uikit/dialog/ZafiroDialog.kt" target="_blank">ZafiroDialog.kt</a>, <a href="https://github.com/niki914/zafiro/blob/main/business/permission/src/main/kotlin/com/niki914/zafiro/business/permission/PermissionManager.kt" target="_blank">PermissionManager.kt</a>, <a href="https://github.com/niki914/zafiro/blob/main/business/api/src/main/java/com/niki914/zafiro/api/Agent.kt" target="_blank">Agent.kt</a>, <a href="https://github.com/niki914/zafiro/blob/main/libs/okia/src/main/java/com/niki914/okia/Okia.kt" target="_blank">Okia.kt</a>.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TECHNICAL SKILLS
+       ======================================================================== -->
+  <section id="skills">
+    <div class="section-title">Technical Skills</div>
+
+    <ul class="skills-list">
+      <li>
+        <b>Kotlin</b> and <b>Java</b> development, including core data structures, Coroutines, and Flow.
+      </li>
+      <li>
+        Android development technologies including <b>Custom Views, Jetpack Compose, data persistence, network requests, and IPC</b>.
+      </li>
+      <li>
+        <b>Solid understanding of Android core mechanisms</b>, including Looper mechanisms, View touch event dispatching, View rendering pipeline, and coroutine state machines.
+      </li>
+      <li>
+        <b>Git team collaboration</b>, including branch management, code merging, and conflict resolution.
+      </li>
+      <li>
+        Common architecture patterns including <b>MVP, MVVM, and MVI</b> for project development.
+      </li>
+      <li>
+        AI-assisted development, leveraging <b>Git Hooks</b>, <b>MCP</b>, <b>CLI</b>, and <b>Skills</b> to enhance engineering quality.
+      </li>
+    </ul>
+  </section>
+
+</div>
+
+</body>
+</html>
